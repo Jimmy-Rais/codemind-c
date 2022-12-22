@@ -1,13 +1,11 @@
 #include<stdio.h>
-void snn(int n)
-{
-    int c;
-    c=n*(n+1)/2;
-    printf("%d",c);
-}
 int main()
 {
-    int n;
+    int n,i,s=0;
     scanf("%d",&n);
-    snn(n);
+    for(i=1;i<=n;i++)
+    {
+        s+=i;
+    }
+    printf("%d",s);
 }
